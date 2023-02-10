@@ -2,22 +2,7 @@
     font-family: 'Cormorant Garamond';
 }
 
-.page__menu {
-    margin: 40px auto;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.centered-block {
-    margin: auto;
-}
-
 .header {
-    height: 95px;
     display: flex;
     max-width: 1330px;
     min-width: 1280px;
@@ -30,56 +15,32 @@
 }
 
 .header__link::after {
-    content: "!";
+    content: '!';
 }
 
 .header__link[lang="ru"]::before {
-    content: 'Привет, меня зовут ';
+    content: "Привет, меня зовут "
 }
 
 .header__link[lang="en"]::before {
-    content: 'Hello, my name is ';
+    content: "Hello, my name is "
 }
 
 .header__link[lang="fr"]::before {
-    content: 'Bonjour, je suis ';
+    content: "Bonjour, je suis "
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    min-height: 75px;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1330px;
-    min-width: 1280px;
-    margin: 40px auto;
+.project {
+    background-position: center;
+    background-size: cover;
 }
 
-.menu__link {
-    font-size: 18px;
-    text-decoration: none;
-    color: #10191E;
-    margin-right: 20px;
+.project_name_music-album {
+    background-image: url(https://code.s3.yandex.net/web-code/album.png);
 }
 
-.menu__link:last-of-type {
-    margin-right: 0;
-}
-
-.menu__link_active {
-    text-decoration: underline;
-}
-
-.content {
-    max-width: 1330px;
-    min-width: 1280px;
-}
-
-.content__title {
-    font-size: 34px;
-    margin: 0 0 40px;
-    text-align: center;
+.project_name_design-principles {
+    background-image: url(https://code.s3.yandex.net/web-code/design.png);
 }
 
 .flex-row {
@@ -88,12 +49,10 @@
     flex-wrap: wrap;
 }
 
-.flex-row_reversed {
-    flex-direction: row-reverse;
-}
-
-.flex-row_space_bottom {
-    margin-bottom: 60px;
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .flex-column {
@@ -105,9 +64,79 @@
     flex-direction: column-reverse;
 }
 
-.project {
+.project__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project_name_slider {
+    background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
+}
+
+.project_name_reactive {
+    background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
+}
+
+.flex-row_reversed {
+    flex-direction: row-reverse;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1330px;
+    min-width: 1280px;
+}
+
+.project_name_how-to-study {
+    background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
+    order: 3;
+}
+
+.project_name_across-russia {
+    background-image: url(https://code.s3.yandex.net/web-code/across-russia.png);
+    order: 2;
+}
+
+.project_name_mesto {
+    background-image: url(https://code.s3.yandex.net/web-code/mesto.png);
+    order: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    max-width: 1330px;
+    min-width: 1280px;
+}
+
+.footer__logo {
+    width: 145px;
+    background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    align-self: center;
+}
+
+.content {
+    max-width: 1330px;
+    min-width: 1280px;
+}
+
+.menu__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #10191E;
+    margin-right: 20px;
+}
+
+.menu__link_active {
+    text-decoration: underline;
 }
 
 .project_width_l {
@@ -134,51 +163,43 @@
     height: 240px;
 }
 
-.project_name_music-album {
-    background-image: url(https://code.s3.yandex.net/web-code/album.png);
+.centered-block {
+    margin: auto;
 }
 
-.project_name_design-priciples {
-    background-image: url(https://code.s3.yandex.net/web-code/design.png);
+.page__menu {
+    margin: 40px auto;
 }
 
-.project_name_slider {
-    background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
+.flex-row_space_bottom {
+    margin-bottom: 60px;
 }
 
-.project_name_reactive {
-    background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
-}
-
-.project_name_how-to-study {
-    background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
-    order: 3;
-}
-
-.project_name_across-russia {
-    background-image: url(https://code.s3.yandex.net/web-code/across-russia.png);
-    order: 2;
-}
-
-.project_name_mesto {
-    background-image: url(https://code.s3.yandex.net/web-code/mesto.png);
-    order: 1;
+.content__title {
+    font-size: 34px;
+    margin: 0 0 40px;
+    text-align: center;
 }
 
 .project__overlay {
     background-color: rgba(0, 0, 100, .8);
     height: 100%;
     width: 100%;
+    /* растянули ссылку во весь блок */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* выровняли текст по центру средствами flex */
     text-decoration: none;
+    /* убрали подчеркивание  */
     color: white;
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
     box-sizing: border-box;
+    /* задали внутренний фокус элемента, чтобы контейнер не расширялся */
     padding: 20px;
+    /* отступ, чтобы текст не касался краёв */
     opacity: 0;
 }
 
@@ -186,26 +207,6 @@
     opacity: 1;
 }
 
-.project__video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.footer {
-    height: 95px;
-    display: flex;
-    justify-content: center;
-    max-width: 1330px;
-    min-width: 1280px;
-}
-
-.footer__logo {
-    width: 145px;
-    height: 25px;
-    background-image: url(https://code.s3.yandex.net/web-code/RU-long-black.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-self: center;
+.menu__link:last-of-type {
+    margin-right: 0;
 }
